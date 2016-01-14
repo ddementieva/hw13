@@ -1,0 +1,52 @@
+/*==================
+    header
+====================*/
+.navbar {
+	color: white;
+	font-size: 18px;
+	line-height: 16px;
+	border: none;
+    margin-bottom: 0;
+    background-color: #1d1610;
+
+}
+.navbar-brand > img {
+    display: block;
+    margin: 20px 100px 0 0;
+}
+
+.navbar-default .navbar-nav {
+  padding: 15px 50px;
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  border: 1px solid #9fabba;
+  border-radius: 50px;
+}
+.navbar-default .navbar-nav > li > a {
+    padding: 10px 15px;
+    color: #fff;
+    color: white;
+	font-size: 18px;
+	line-height: 16px;
+}
+button.navbar-toggle {
+  background-color: #1abb9c;
+  color: #fff;
+}
+.social {
+     float: right;
+     margin: 15px 5px;
+}
+
+header {
+    width: 100%;
+    min-width: 320px;
+    border-bottom: solid 1px #ccc;
+    background-color: #1d1610;
+    
+    .container {
+        padding-bottom: 0;
+    }
+}
