@@ -1,7 +1,12 @@
+template {
+  display: none !important;
+}
+
 /* ie hack
  don't remove that style*/
 .m-page {
   display: block;
+  background: url("../images/background.png") no-repeat; 
 }
 
 /* use to align content */
@@ -50,14 +55,12 @@ body {
 p {
   color: #a3b1bf;
 }
-h1 {
-  color: $heading-color;
-  margin-top: 70px;
-  font-size: 78px;
-  font-weight: 700;
-}
+
 h2 {
   color: $heading-color;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 48px;
 }
 h3 {
             color: #5d6981;

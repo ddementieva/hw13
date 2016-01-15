@@ -5846,37 +5846,35 @@ button.close {
     font-size: 36px;
     font-weight: 300;
     margin: 15px 0 45px;
-    color: #5d6981; }
+    color: #929292; }
   .main a.button {
-    background-color: #ff2d55;
+    background-color: #dfad00;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 700;
     padding: 20px 70px 20px;
     margin-top: 70px;
     margin-bottom: 70px; }
   .main a.button:hover {
-    background-color: #fff;
-    color: #ff2d55;
-    border: solid 1px #ff2d55; } }
+    background-color: #ab8500;
+    color: #fff; } }
 
 @media screen and (min-width: 768px) {
   .main .video {
     width: 100%; }
   .main a.button {
-    background-color: #ff2d55;
+    background-color: #dfad00;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 5px;
     font-size: 18px;
     font-weight: 700;
     padding: 20px 70px 20px;
     margin-top: 70px;
     margin-bottom: 70px; }
   .main a.button:hover {
-    background-color: #fff;
-    color: #ff2d55;
-    border: solid 1px #ff2d55; } }
+    background-color: #ab8500;
+    color: #fff; } }
 
 /*==================
     description
@@ -5957,10 +5955,14 @@ button.close {
     font-weight: 400;
     padding: 20px; } }
 
+template {
+  display: none !important; }
+
 /* ie hack
  don't remove that style*/
 .m-page {
-  display: block; }
+  display: block;
+  background: url("../images/background.png") no-repeat; }
 
 /* use to align content */
 .container {
@@ -6001,14 +6003,11 @@ body {
 p {
   color: #a3b1bf; }
 
-h1 {
-  color: #0149a1;
-  margin-top: 70px;
-  font-size: 78px;
-  font-weight: 700; }
-
 h2 {
-  color: #0149a1; }
+  color: #646464;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 48px; }
 
 h3 {
   color: #5d6981;
@@ -6029,8 +6028,12 @@ a, a:hover {
     main page
 ====================*/
 .main {
-  background: url("#") top no-repeat;
   text-align: center; }
+  .main h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 56px; }
   .main .after-heading {
     color: #5d6981;
     font-size: 36px;
@@ -6040,20 +6043,6 @@ a, a:hover {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px; }
-
-.video video {
-  margin: 200px 0 20px 0;
-  width: 715px;
-  height: 447px;
-  position: relative; }
-  .video video a {
-    display: block;
-    background: white;
-    border-radius: 50px;
-    color: #0149a1;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 48px; }
 
 /*==================
     description
@@ -6193,7 +6182,8 @@ a, a:hover {
   font-family: Roboto;
   font-size: 36px;
   font-weight: 100;
-  line-height: 36px; }
+  line-height: 36px;
+  margin-top: 63px; }
 
 .fourth-main p {
   color: #323232;
@@ -6201,6 +6191,21 @@ a, a:hover {
   font-size: 12px;
   font-weight: 300;
   line-height: 18px; }
+
+.fourth-main .video video {
+  display: block;
+  margin: 50px auto 50px;
+  width: 460px;
+  height: 340px;
+  position: relative; }
+  .fourth-main .video video a {
+    display: block;
+    background: white;
+    border-radius: 50px;
+    color: #0149a1;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px; }
 
 #tfheader {
   background-color: #c3dfef; }
@@ -6275,7 +6280,6 @@ a, a:hover {
 .navbar-default .navbar-nav > li > a {
   padding: 10px 15px;
   color: #fff;
-  color: white;
   font-size: 18px;
   line-height: 16px; }
 

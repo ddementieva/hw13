@@ -22,17 +22,9 @@
 </head>
 <body>
 
-<!--scripts-->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
-<script src="js/main.js" type="text/javascript"></script>
-<script src="bootstrap-sass-3.3.6/javascripts/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
 <div class="wrapper">
 
 
-   
     <!-- header -->
     <header>
         <div class="row">
@@ -45,22 +37,48 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a href="#" class="navbar-brand">
-                                <img src="images/logo.png" alt="Loading...">
-                            </a>
+                            <!-- HTML for SEARCH BAR -->
+                            <div id="tfheader">
+                                <form id="tfnewsearch" method="get" action="http://www.google.com">
+                                    <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+                                </form>
+                                <div class="tfclear"></div>
+                            </div>
                         </div>
                         <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Home</a>
+                                    <a href="#" class="nav-link">Новости</a>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Our Team</a></li>
-                                <li class="nav-item"><a href="4.html" class="nav-link">Portfolio</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Рекомендую</a>
+                                    <ul>
+                                        <li>Кондиционер</li>
+                                        <li>Бальзам для век</li>
+                                        <li>Динамический увлажняющий крем</li>
+                                        <li>Лосьон для тела "Солярис"</li>
+                                        <li>Очищающее молочко для лица</li>
+                                        <li>Комплект пробников кремов</li>
+                                        <li>Грязевая маска для лица</li>
+                                        <li>Крем для рук и ногтей</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Солярис для лица c витамином "А"</li>
+                                        <li>Ночной крем</li>
+                                        <li>Водные компрессы Мёртвого Моря</li>
+                                        <li>Квартет солей Мертвого моря</li>
+                                        <li>Шампунь против перхоти</li>
+                                        <li>Шампунь для повседневного пользования</li>
+                                        <li>Тонизирующий лосьон для тела</li>
+                                        <li>Зубная паста "Шинсин"</li>
+                                    </ul>
+
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">Приглашаю</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
                             </ul>
-                            <a href="#" class="social"><img src="images/facebook.png" alt="Loading..."></a>
-                            <a href="#" class="social"><img src="images/twitter.png" alt="Loading..."></a>
+                            <a href="#" class="social shop"><img src="images/shop-icon.png" alt="Loading..."></a>
                         </div>
                     </nav>
                 </div>
@@ -73,56 +91,50 @@
         
         <div class="main">
             <div class="container">
-                <h1>Check our creativity</h1>
-                <p class="after-heading">We are the best and we know it!</p>
-                <a href="#" class="btn btn-lg button">Ask for price</a>
-                <div class="video">
-                    <!--<button onclick="playPause()">Play</button>-->
-                    <video id="video1"  controls>
-                        <source src="videos/example-video.mp4" type="video/mp4">
-                        <source src="#" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video>
-                    <!--<iframe src="https://www.youtube.com/embed/gEPmA3USJdI" width="715" height="447" frameborder="0" allowfullscreen></iframe>-->
+                <div class="description">
+                    <h1>Купить продукцию сейчас</h1>
+                    <a href="#" class="btn btn-lg button">Узнать больше <img src="images/arrow.png" /></a>
+                </div>>
+            </div>
+        </div>
+
+        <!-- news -->
+
+        <div class="news part">
+            <h2>Новости</h2>
+
+            <div class="row text-center">
+                <div>
+                    <div class="border col-xs-3"><img src="images/icon1.png" alt="Loading..."/>
+                        <h3>Lorem ipsum</h3>
+                        <p>Cras vel eleifend nisl, ac efficitur purus. Vestibulum vestibulum aliquam lectusmattis ac.
+                        </p>
+                    </div>
                 </div>
-                <div class="description part">
-                <div class="row text-center">
-                    <div>
-                        <div class="border col-xs-3"><img src="images/icon1.png" alt="Loading..."/>
-                            <h3>Lorem ipsum</h3>
-                            <p>Cras vel eleifend nisl, ac efficitur purus. Vestibulum vestibulum aliquam lectusmattis ac.
-                            </p>
-                        </div>
+                <div>
+                    <div class="border col-xs-3"><img src="images/icon2.png" alt="Loading..." />
+                        <h3>Aenean eget</h3>
+                        <p>Donec sagittis accumsan diam, eu efficitur nunc lobortis eget. Pellentesque posuere.
+                        </p>
                     </div>
-                    <div>
-                        <div class="border col-xs-3"><img src="images/icon2.png" alt="Loading..." />
-                            <h3>Aenean eget</h3>
-                            <p>Donec sagittis accumsan diam, eu efficitur nunc lobortis eget. Pellentesque posuere.
-                            </p>
-                        </div>
+                </div>
+                <div>
+                    <div class="border col-xs-3"><img src="images/icon3.png" alt="Loading..." />
+                        <h3>Nulla felis quam</h3>
+                        <p>Nulla felis quam, malesuada quis tincidunt vitae, iaculis id massa. Mauris pellentesque.
+                        </p>
                     </div>
-                    <div>
-                        <div class="border col-xs-3"><img src="images/icon3.png" alt="Loading..." />
-                            <h3>Nulla felis quam</h3>
-                            <p>Nulla felis quam, malesuada quis tincidunt vitae, iaculis id massa. Mauris pellentesque.
-                            </p>
-                        </div>
+                </div>
+
+                <div>
+                    <div class="border col-xs-3"><img src="images/icon4.png" alt="Loading..." />
+                        <h3>Mauris</h3>
+                        <p>Pellentesque posuere nisl a posuere mattis. Quisque nuet congue at, variuse.
+                        </p>
                     </div>
-                    
-                    <div>
-                        <div class="border col-xs-3"><img src="images/icon4.png" alt="Loading..." />
-                            <h3>Mauris</h3>
-                            <p>Pellentesque posuere nisl a posuere mattis. Quisque nuet congue at, variuse. 
-                            </p>
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
-            </div>
-        </div>
-        
-        
-        
     
 
 
@@ -185,10 +197,18 @@
     </li>
   </ul>
 </div>
-   
 
-        
 
+
+        <div class="video">
+            <!--<button onclick="playPause()">Play</button>-->
+            <video id="video1"  controls>
+                <source src="videos/example-video.mp4" type="video/mp4">
+                <source src="#" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <!--<iframe src="https://www.youtube.com/embed/gEPmA3USJdI" width="715" height="447" frameborder="0" allowfullscreen></iframe>-->
+        </div>
 
         <!-- team -->
         <div class="team part">
@@ -237,69 +257,39 @@
 							</a></small></div><div><small><a href="https://ultimatewebtraffic.com/">buy websit traffic Ultimatewebtraffic</a></small></div></iframe>
 </div>
 </main>
+
+template
+</div>
+
 <!-- footer -->
 <footer>
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="border col-xs-3">
-                    <ul>
-                        <li>Ad litora torquent</li>
-                        <li>Per conubia</li>
-                        <li>Nostra</li>
-                        <li>Per inceptos</li>
-                        <li>Himenaeos</li>
-                        <li>In consectetur</li>
-                        <li>Nisi sed blandit</li>
-                        <li>Tincidunt</li>
-                    </ul>
+                <div class="border col-xs-4">
+                    <p>Сайт независимого консультанта компании</p>
                 </div>
-                <div class="border col-xs-3"> 
-                    <ul>
-                        <li>Class aptent</li>
-                        <li>Taciti sociosqu</li>
-                        <li>Ad litora torquent</li>
-                        <li>Per conubia</li>
-                        <li>Nostra</li>
-                        <li>Per inceptos</li>
-                        <li>Himenaeos</li>
-                        <li>In consectetur</li>
-                        <li>Nisi sed blandit</li>
-                        <li>Tincidunt</li>
-                    </ul>
+                <div class="border col-xs-4">
+                    <a href="#"><img src="images/icons-line.png" alt="Loading..." /></a>
                 </div>
-                <div class="border col-xs-3">
-                    <ul>
-                        <li>Taciti sociosqu</li>
-                        <li>Ad litora torquent</li>
-                        <li>Per conubia</li>
-                        <li>Nostra</li>
-                        <li>Per inceptos</li>
-                        <li>Himenaeos</li>
-                        <li>In consectetur</li>
-                        <li>Nisi sed blandit</li>
-                        <li>Tincidunt</li>
-                    </ul>
-                </div>
-                <div class="border col-xs-3">
-                    <ul>
-                        <li>Per conubia</li>
-                        <li>Nostra</li>
-                        <li>Per inceptos</li>
-                        <li>Himenaeos</li>
-                        <li>In consectetur</li>
-                        <li>Nisi sed blandit</li>
-                        <li>Tincidunt</li>
-                    </ul>
+                <div class="border col-xs-4">
+                    <p>Разработка сайта студия www</p>
                 </div>
             </div>
-            <div class="made-by">
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <p>Try awsome tool for desgners <a href="#">symu.co</a></p>
-                </div>
         </div>
     </div>
 </footer>
-</div>
+
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="bootstrap-sass-3.3.6/javascripts/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+    // Shim so we can style in IE6/7/8
+    document.createElement('template');
+</script>
 </body>
 </html>
